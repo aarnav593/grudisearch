@@ -6,7 +6,7 @@ function App() {
   const [results, setResults] = useState([]);
   const [loading, setLoading] = useState(false);
 
-  const openAIApiKey = "BHUVANputTHEapiKEYiEMAILEDhereINSIDEthisSTRING";
+  const openAIApiKey = process.env.REACT_APP_OPEN_API_KEY;
 
   const classroomTools = [
     ["Computer Mice", "Drawer 1"],
@@ -171,9 +171,6 @@ function App() {
           </ul>
         </div>
       </main>
-      <footer>
-        <p>Powered by OpenAI</p>
-      </footer>
     </div>
   );
 }

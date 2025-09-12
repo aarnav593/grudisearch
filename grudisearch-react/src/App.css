@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
 body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #f0f2f5;
+    font-family: 'Arial', sans-serif;
+    background-color: #69b1f8; 
     color: #333;
     display: flex;
     justify-content: center;
@@ -13,10 +13,10 @@ body {
 }
 
 .container {
-    background-color: #fff;
-    padding: 2rem 3rem;
+    background-color: #ffffff;
+    padding: 5rem 5rem;
     border-radius: 15px;
-    box-shadow: 0 8px Rgba(0,0,0,0.1);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
     width: 100%;
     max-width: 500px;
     text-align: center;
@@ -44,7 +44,7 @@ header h1 {
 
 #searchInput:focus {
     outline: none;
-    border-color: #007bff;
+    border-color: #3f9cff;
 }
 
 #searchButton {
