@@ -6,7 +6,7 @@ function App() {
   const [results, setResults] = useState([]);
   const [loading, setLoading] = useState(false);
 
-  const openAIApiKey = process.env.REACT_APP_OPEN_API_KEY;
+  const openAIApiKey = process.env.OPEN_API_KEY;
 
   const classroomTools = [
     ["Computer Mice", "Drawer 1"],
