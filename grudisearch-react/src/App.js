@@ -1,6 +1,23 @@
 import React, { useState } from 'react';
 import './App.css';
 
+const WooperSpam = ({ count }) => {
+  const woopers = [];
+  for (let i = 0; i < count; i++) {
+    const style = {
+      position: 'fixed',
+      left: `${Math.random() * 100}vw`,
+      top: `${Math.random() * 100}vh`,
+      width: `${Math.random() * 100 + 50}px`,
+      transform: `rotate(${Math.random() * 360}deg)`,
+      zIndex: -1,
+    };
+        const wooperImage = '/wooper1.jpeg';
+    woopers.push(<img key={i} src={wooperImage} alt="Wooper" style={style} />);
+  }
+  return <>{woopers}</>;
+};
+
 function App() {
   const [query, setQuery] = useState('');
   const [results, setResults] = useState([]);
@@ -144,6 +161,7 @@ function App() {
 
   return (
     <div className="container">
+      <WooperSpam count={50} />
       <header>
         <h1>Grudi/Lipman Tool Finder</h1>
       </header>
