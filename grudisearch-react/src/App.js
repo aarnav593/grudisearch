@@ -125,7 +125,7 @@ function App() {
     setResults([]);
 
     try {
-      const prompt = `Given the user's search for "${query}", find the most relevant items from this list of classroom tools: ${JSON.stringify(classroomTools)}. Your response must be a valid JSON array of arrays, where each inner array contains the tool name and its location. For example: [["Tool Name", "Location"]]. Do not include any text outside of the JSON response. If the object is not found, instruct the user to ask Ms. Grudi. If a humorous input is received, make a sarcastic and funny remark relating to the input.`;
+      const prompt = `Given the user's search for "${query}", find the most relevant items from this list of classroom tools: ${JSON.stringify(classroomTools)}. Your response must be a valid JSON array of arrays, where each inner array contains the tool name and its location. For example: [["Tool Name", "Location"]]. Do not include any text outside of the JSON response. If the object is not found, instruct the user to ask Ms. Grudi. If a humorous or funny input is received, make a sarcastic or funny remark relating to the input and store it in the same JSON format as specified before.`;
 
       const response = await fetch('https://api.openai.com/v1/chat/completions', {
         method: 'POST',
